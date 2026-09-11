@@ -1,18 +1,16 @@
 /*
  * main.c
- *
- *  Author: Abdelrahman Elbokhary
  */
 
-#include "APP_Keypad_7Seg.h"
+#include "APP_Calculator.h"
 
 int main(void)
 {
-    APP_Keypad7Seg_Init();
+    APP_Calculator_Init();
 
     while (1)
     {
-        APP_Keypad7Seg_Task();
+        APP_Calculator_Task();
     }
     
     return 0;
