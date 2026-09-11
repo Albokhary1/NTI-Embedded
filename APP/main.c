@@ -1,18 +1,16 @@
 /*
  * main.c
- *
- *  Author: Abdelrahman Elbokhary
  */
 
-#include "APP_LED_Animation.h"
+#include "APP_Potentiometer_LEDs.h"
 
 int main(void)
 {
-    APP_LED_Animation_Init();
+    APP_PotentiometerLEDs_Init();
 
     while (1)
     {
-        APP_LED_Animation_Task();
+        APP_PotentiometerLEDs_Task();
     }
     
     return 0;
