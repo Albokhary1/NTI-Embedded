@@ -1,18 +1,16 @@
 /*
  * main.c
- *
- *  Author: Abdelrahman Elbokhary
  */
 
-#include "APP_TempAlarm.h"
+#include "APP_LDR_LED.h"
 
 int main(void)
 {
-    APP_TempAlarm_Init();
+    APP_LDR_LED_Init();
 
     while (1)
     {
-        APP_TempAlarm_Task();
+        APP_LDR_LED_Task();
     }
     
     return 0;
