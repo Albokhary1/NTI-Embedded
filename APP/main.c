@@ -1,16 +1,18 @@
 /*
  * main.c
+ *
+ *  Author: Abdelrahman Elbokhary
  */
 
-#include "APP_Calculator.h"
+#include "APP_MotorControl.h"
 
 int main(void)
 {
-    APP_Calculator_Init();
+    APP_MotorControl_Init();
 
     while (1)
     {
-        APP_Calculator_Task();
+        APP_MotorControl_Task();
     }
     
     return 0;
