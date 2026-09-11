@@ -1,18 +1,16 @@
 /*
  * main.c
- *
- *  Author: Abdelrahman Elbokhary
  */
 
-#include "APP_MotorControl.h"
+#include "APP_MotorDirControl.h"
 
 int main(void)
 {
-    APP_MotorControl_Init();
+    APP_MotorDirControl_Init();
 
     while (1)
     {
-        APP_MotorControl_Task();
+        APP_MotorDirControl_Task();
     }
     
     return 0;
