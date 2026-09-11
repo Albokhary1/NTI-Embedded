@@ -1,16 +1,18 @@
 /*
  * main.c
+ *
+ *  Author: Abdelrahman Elbokhary
  */
 
-#include "APP_MotorDirControl.h"
+#include "APP_DIP_Interrupt.h"
 
 int main(void)
 {
-    APP_MotorDirControl_Init();
+    APP_DIP_Interrupt_Init();
 
     while (1)
     {
-        APP_MotorDirControl_Task();
+        /* The main loop is empty. The microcontroller waits for the interrupts to trigger the ISRs. */
     }
     
     return 0;
