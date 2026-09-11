@@ -1,18 +1,16 @@
 /*
- * main.c
+ * main_Master.c
  */
 
-#include "APP_TimerLED.h"
+#include "APP_SPI_Master.h"
 
 int main(void)
 {
-    APP_TimerLED_Init();
+    APP_SPI_Master_Init();
 
     while (1)
     {
-        /* The main loop is completely free. 
-         * The LED toggling is handled automatically by the Timer0 Interrupt. 
-         */
+        APP_SPI_Master_Task();
     }
     
     return 0;
