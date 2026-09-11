@@ -4,15 +4,15 @@
  *  Author: Abdelrahman Elbokhary
  */
 
-#include "APP_Voltmeter.h"
+#include "APP_TempAlarm.h"
 
 int main(void)
 {
-    APP_Voltmeter_Init();
+    APP_TempAlarm_Init();
 
     while (1)
     {
-        APP_Voltmeter_Task();
+        APP_TempAlarm_Task();
     }
     
     return 0;
