@@ -2,15 +2,17 @@
  * main.c
  */
 
-#include "APP_LDR_LED.h"
+#include "APP_TimerLED.h"
 
 int main(void)
 {
-    APP_LDR_LED_Init();
+    APP_TimerLED_Init();
 
     while (1)
     {
-        APP_LDR_LED_Task();
+        /* The main loop is completely free. 
+         * The LED toggling is handled automatically by the Timer0 Interrupt. 
+         */
     }
     
     return 0;
